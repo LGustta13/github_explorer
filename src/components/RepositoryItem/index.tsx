@@ -6,15 +6,17 @@ type RepositoryItemProps = {
     }
 }
 
-export function RepositoryItem(props : RepositoryItemProps){
-    return(
+export function RepositoryItem(props: RepositoryItemProps) {
+    return (
         <li>
-            <strong>{props.repository.name}</strong>
-            <p>{props.repository.description}</p>
-
+            <div>
+                <strong>{props.repository.name}</strong>
+                <p>{props.repository.description}</p>
+            </div>
             <a href={props.repository.html_url}>
                 Acessar repositório
             </a>
         </li>
+
     );
 }
